@@ -52,7 +52,7 @@ googleAnalytics = ""
     services = "Services"
     portfolio = "Portfolio"
     about = "About"
-    team = "Team"
+    #team = "Team"
     contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -78,33 +78,33 @@ googleAnalytics = ""
     # the 'static/img' folder.
     title = "Welcome To Rope's Hand Wash!"
     subtitle = "You dirt it, we squirt it!"
-    buttonText = "Tell me more"
+    buttonText = "Schedule an appointment"
 
 
   # Services section
   [params.services]
     enable = true
     title = "Services"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = ""
 
     [[params.services.row]]
 
     [[params.services.row.list]]
       icon = "fa-shopping-cart"
       title = "E-Commerce"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      description = ""
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-laptop"
       title = "Responsive Design"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      description = ""
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-lock"
       title = "Web"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      description = ""
       url = "#"
 
   # Portfolio section
@@ -115,7 +115,7 @@ googleAnalytics = ""
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
     title = "Portfolio"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = ""
 
     [params.portfolio.modal]
       client = "Client"
@@ -130,67 +130,16 @@ googleAnalytics = ""
     title = "About"
     subtitle = "Lorem ipsum dolor sit amet consectetur."
     endpoint = "Be part<br>of our<br>story!"
+    
+      
 
-
-  # Team section
-  [params.team]
-    enable = true
-    # Possibility to center items
-    #center = true
-    title = "Our amazing team"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
-
-    # All team member's pictures are stored under 'static/img/team'.
-    # Replace them with your own too.
-    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
-    [[params.team.members]]
-      img = "1.jpg"
-      name = "Kay Garland"
-      position = "Lead Designer"
-      reportsTo = "CTO"
-      livesIn = "[Munich, Germany](#some-maps-url)"
-      scope = [
-        "UX for [member dashboard](#)",
-        "Maintainer for [awesome-project](#)",
-        "Open Source [community management](#)"
-      ]
-      # For bio markdown and even multiline strings are available.
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-    [[params.team.members]]
-      img = "2.jpg"
-      name = "Larry Parker"
-      position = "Lead Marketer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-    [[params.team.members]]
-      img = "3.jpg"
-      name = "Diana Pertersen"
-      position = "Lead Developer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
-  # Client section
+#  # Client section
     [params.clients_list]
       enable = true
       # Possibility to center items
-      #center = true
+      center = true
       # Optional client title specifying the involvement
-      #title = "Used and trusted by"
+      title = "Some of the great brands we use to make your ride look brand new"
 
       # All the clients' logos are stored under 'static/img/logos'.
       # Replace them with your clients's logos.
@@ -231,10 +180,10 @@ She worked at Pied Piper for years until they went belly up."""
 
   # Contact section
   [params.contact]
-    enable = true
-    title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
-    buttonText = "Send message"
+   enable = true
+  #  title = "Contact us"
+   # subtitle  = "Lorem ipsum dolor sit amet consectetur."
+   # buttonText = "Send message"
     # netlify = true
 
     # Since this template is static, the contact form uses www.formspree.io as a
@@ -255,31 +204,31 @@ She worked at Pied Piper for years until they went belly up."""
     # add some custom JS script to finish the implementation.
     # postURL = "https://example.com/mailout/"
 
-    email = "your@email.com"
+  #  email = "your@email.com"
 
     # Success and error message overwrite for async contact form
     #thanks = "Thank you for awesomely contacting us."
     #error = "Message could not be send. Please contact us at mail@example.com instead."
 
-    [params.contact.captcha]
+  #  [params.contact.captcha]
       # sitekey = ""
 
     # 'warning' defines error messages for invalid inputs
-    [params.contact.form.name]
-      text = "Your Name *"
-      warning = "Please enter your name."
+   # [params.contact.form.name]
+   #   text = "Your Name *"
+   #   warning = "Please enter your name."
 
-    [params.contact.form.email]
-      text = "Your Email *"
-      warning = "Please enter your email address."
+  #  [params.contact.form.email]
+   #   text = "Your Email *"
+   #   warning = "Please enter your email address."
 
-    [params.contact.form.phone]
-      text = "Your Phone *"
-      warning = "Please enter your phone number."
+    #[params.contact.form.phone]
+    #  text = "Your Phone *"
+    #  warning = "Please enter your phone number."
 
-    [params.contact.form.message]
-      text = "Your Message *"
-      warning = "Please enter a message."
+   # [params.contact.form.message]
+    #  text = "Your Message *"
+     # warning = "Please enter a message."
 
       # Add optional form fields to identify contact forms
       #[[params.contact.form.hidden]]
@@ -293,7 +242,7 @@ She worked at Pied Piper for years until they went belly up."""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Published under the Apache License 2.0."
+    copyright = "©Rope's Hand Wash 2019 Powered by the Agency theme for Hugo"
 
     [[params.footer.social]]
       icon = "fa-instagram"
